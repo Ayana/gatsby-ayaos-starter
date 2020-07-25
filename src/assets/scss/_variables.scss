@@ -1,0 +1,33 @@
+/* --------------------------------------------
+Valuables
+-------------------------------------------- */
+
+// Typography
+$font-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Lato,
+  "Noto Sans JP", sans-serif;
+$font-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Noto Serif JP", serif;
+$font-heading: "Barlow", sans-serif;
+
+// Media Query Breakpoint
+$xs: 320px;
+$sm: 414px;
+$md: 668px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1312px;
+
+// Color
+$color-black: #222;
+$color-white: #f8f8f8;
+$color-primary: #2253b4;
+$color-secondary: #f7a046;
+$color-accent: #92693c;
+
+$color-white: #fff;
+$color-gray: lighten($color-black, 40%);
+$color-light-gray: lighten($color-black, 2%);
+$color-dark-gray: lighten($color-black, 70%);
+
+$color-font: #333;
+$color-bg: #f8f8f8;

@@ -1,0 +1,10 @@
+@charset 'utf-8';
+
+// Reset
+@import 'normalize-scss';
+@import './_reset.scss';
+
+// Initial setting
+@import 'variables';
+@import 'mixin';
+@import 'base';

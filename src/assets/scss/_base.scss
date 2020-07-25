@@ -1,0 +1,117 @@
+/*-----------------------------------------------
+//  Project Default Styles
+//  
+//  Table of Contents:
+//	1.Import
+//	2.Typography
+//	3.Base 
+//	4.Modules
+-----------------------------------------------*/
+
+/* --------------------------------------------
+1.Import 
+-------------------------------------------- */
+@import url("https://fonts.googleapis.com/css?family=Lato|Noto+Serif+JP:400,500,600|Noto+Sans+JP:400,500,600|Barlow&display=swap");
+
+/* --------------------------------------------
+2.Typography
+-------------------------------------------- */
+.font-heading {
+  font-family: $font-heading;
+  font-weight: 600;
+}
+.font-serif {
+  font-family: $font-serif;
+}
+
+/* --------------------------------------------
+3.Base
+-------------------------------------------- */
+html {
+  font-size: 16px;
+  width: 100%;
+  -webkit-print-color-adjust: exact; /*印刷用*/
+  -webkit-tap-highlight-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /*iPhoneタップ時の半透明を消す*/
+  body {
+    background-color: $color-bg;
+    color: $color-font;
+    font-size: 1.5rem;
+    font-family: $font-sans-serif;
+    letter-spacing: -0.01em;
+    line-height: 1.4;
+    @include medium {
+      font-size: 2rem;
+    }
+    ::selection {
+      // background: #b2e9d4;
+    }
+    a,
+    img,
+    button {
+      color: $color-black;
+      text-decoration: none;
+      transition: all 0.3s;
+    }
+    img {
+      width: 100%;
+    }
+    @include medium {
+      a:hover,
+      a img:hover,
+      button:hover {
+        opacity: 0.7;
+      }
+      a.nohover:hover,
+      a.nohover img:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+/* --------------------------------------------
+4.Modules
+-------------------------------------------- */
+.link-ul {
+  text-decoration: underline;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Container
+.container {
+  padding: 0 2rem;
+  &.sp-full {
+    padding: 0;
+  }
+}
+.container-wide {
+  padding: 0 2rem;
+}
+.container-narrow {
+  padding: 0 2rem;
+  @include medium {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+// Visibility
+.only-for-medium {
+  display: none;
+  @include medium {
+    display: inline-block;
+  }
+}
+.only-for-small {
+  @include medium {
+    display: none;
+  }
+}
